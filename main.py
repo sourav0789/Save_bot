@@ -13,6 +13,7 @@ api_id = os.environ.get("ID", "20679071")
 ss = os.environ.get("STRING", "")
 bot = Client("mybot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
 acc = Client("myacc",api_id=api_id,api_hash=api_hash,session_string=ss)
+PORT = os.environ.get('PORT', '8000')
 
 
 @bot.on_message(filters.command(["start"]))
